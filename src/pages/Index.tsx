@@ -5,25 +5,25 @@ import Icon from "@/components/ui/icon";
 type Tab = "schedule" | "bookings" | "stats" | "profile";
 
 const SCHEDULE_DATA = [
-  { time: "06:00", title: "Утренняя тренировка", type: "Фигурное катание", arena: "Арена А", spots: 3, total: 12, status: "available" },
-  { time: "08:00", title: "Хоккейная тренировка", type: "Хоккей", arena: "Арена Б", spots: 0, total: 20, status: "full" },
-  { time: "10:00", title: "Открытое катание", type: "Свободное", arena: "Арена А", spots: 15, total: 30, status: "available" },
-  { time: "12:00", title: "Детская секция", type: "Детская секция", arena: "Арена В", spots: 7, total: 15, status: "available" },
-  { time: "14:00", title: "Тренировка сборной", type: "Хоккей", arena: "Арена Б", spots: 0, total: 25, status: "closed" },
-  { time: "16:00", title: "Вечернее катание", type: "Свободное", arena: "Арена А", spots: 22, total: 40, status: "available" },
-  { time: "18:00", title: "Профи-тренировка", type: "Скоростное", arena: "Арена В", spots: 2, total: 8, status: "available" },
-  { time: "20:00", title: "Ночное катание", type: "Свободное", arena: "Арена А", spots: 18, total: 35, status: "available" },
+  { time: "06:00", title: "Утренняя тренировка", type: "Фигурное катание", arena: "Орион", spots: 3, total: 12, status: "available" },
+  { time: "08:00", title: "Хоккейная тренировка", type: "Хоккей", arena: "Орион", spots: 0, total: 20, status: "full" },
+  { time: "10:00", title: "Открытое катание", type: "Свободное", arena: "Орион", spots: 15, total: 30, status: "available" },
+  { time: "12:00", title: "Детская секция", type: "Детская секция", arena: "Орион", spots: 7, total: 15, status: "available" },
+  { time: "14:00", title: "Тренировка сборной", type: "Хоккей", arena: "Орион", spots: 0, total: 25, status: "closed" },
+  { time: "16:00", title: "Вечернее катание", type: "Свободное", arena: "Орион", spots: 22, total: 40, status: "available" },
+  { time: "18:00", title: "Профи-тренировка", type: "Скоростное", arena: "Орион", spots: 2, total: 8, status: "available" },
+  { time: "20:00", title: "Ночное катание", type: "Свободное", arena: "Орион", spots: 18, total: 35, status: "available" },
 ];
 
 const DAYS = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
 const DATES = [9, 10, 11, 12, 13, 14, 15];
 
 const BOOKINGS = [
-  { id: "B-2024", title: "Вечернее катание", date: "Сегодня, 16:00", arena: "Арена А", duration: "90 мин", status: "active", type: "Свободное" },
-  { id: "B-2023", title: "Утренняя тренировка", date: "Завтра, 06:00", arena: "Арена А", duration: "60 мин", status: "upcoming", type: "Фигурное" },
-  { id: "B-2022", title: "Профи-тренировка", date: "14 июня, 18:00", arena: "Арена В", duration: "120 мин", status: "upcoming", type: "Скоростное" },
-  { id: "B-2021", title: "Открытое катание", date: "10 июня, 10:00", arena: "Арена А", duration: "90 мин", status: "done", type: "Свободное" },
-  { id: "B-2020", title: "Хоккей", date: "8 июня, 08:00", arena: "Арена Б", duration: "60 мин", status: "done", type: "Хоккей" },
+  { id: "B-2024", title: "Вечернее катание", date: "Сегодня, 16:00", arena: "Орион", duration: "90 мин", status: "active", type: "Свободное" },
+  { id: "B-2023", title: "Утренняя тренировка", date: "Завтра, 06:00", arena: "Орион", duration: "60 мин", status: "upcoming", type: "Фигурное" },
+  { id: "B-2022", title: "Профи-тренировка", date: "14 июня, 18:00", arena: "Орион", duration: "120 мин", status: "upcoming", type: "Скоростное" },
+  { id: "B-2021", title: "Открытое катание", date: "10 июня, 10:00", arena: "Орион", duration: "90 мин", status: "done", type: "Свободное" },
+  { id: "B-2020", title: "Хоккей", date: "8 июня, 08:00", arena: "Орион", duration: "60 мин", status: "done", type: "Хоккей" },
 ];
 
 const STATS_MONTHLY = [
@@ -72,7 +72,7 @@ export default function Index() {
           <div>
             <p className="text-muted-foreground text-xs font-golos tracking-widest uppercase mb-1">Ледовый дворец</p>
             <h1 className="font-bebas text-4xl text-foreground tracking-wide" style={{ textShadow: "0 0 20px hsl(195 100% 50% / 0.6)" }}>
-              ICE <span className="text-sky-400">ARENA</span>
+              <span className="text-sky-400">ОРИОН</span>
             </h1>
           </div>
           <div className="relative">
