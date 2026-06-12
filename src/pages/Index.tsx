@@ -20,7 +20,6 @@ const DATES = [9, 10, 11, 12, 13, 14, 15];
 
 const BOOKINGS = [
   { id: "B-2024", title: "Вечернее катание", date: "Сегодня, 16:00", arena: "Орион", duration: "90 мин", status: "active", type: "Свободное" },
-  { id: "B-2023", title: "Утренняя тренировка", date: "Завтра, 06:00", arena: "Орион", duration: "60 мин", status: "upcoming", type: "Фигурное" },
   { id: "B-2022", title: "Профи-тренировка", date: "14 июня, 18:00", arena: "Орион", duration: "120 мин", status: "upcoming", type: "Скоростное" },
   { id: "B-2021", title: "Открытое катание", date: "10 июня, 10:00", arena: "Орион", duration: "90 мин", status: "done", type: "Свободное" },
   { id: "B-2020", title: "Хоккей", date: "8 июня, 08:00", arena: "Орион", duration: "60 мин", status: "done", type: "Хоккей" },
