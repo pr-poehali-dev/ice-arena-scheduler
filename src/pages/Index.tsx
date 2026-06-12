@@ -204,23 +204,7 @@ export default function Index() {
                     <span className={`text-[10px] font-golos px-2 py-0.5 rounded-full border ${TYPE_COLORS[slot.type] || "bg-muted text-muted-foreground border-border"}`}>
                       {slot.type}
                     </span>
-                    {slot.status !== "closed" && (
-                      <div className="flex items-center gap-2">
-                        <div className="h-1 w-20 bg-muted rounded-full overflow-hidden">
-                          <div
-                            className="h-full rounded-full transition-all"
-                            style={{
-                              width: `${((slot.total - slot.spots) / slot.total) * 100}%`,
-                              background: "linear-gradient(90deg, hsl(195 100% 50%), hsl(170 80% 45%))",
-                              boxShadow: "0 0 6px hsl(195 100% 50% / 0.4)"
-                            }}
-                          />
-                        </div>
-                        <span className="text-[10px] text-muted-foreground font-golos">
-                          {slot.spots}/{slot.total}
-                        </span>
-                      </div>
-                    )}
+
                   </div>
                 </div>
               ))}
