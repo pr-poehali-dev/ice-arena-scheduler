@@ -5,7 +5,7 @@ import Icon from "@/components/ui/icon";
 type Tab = "schedule" | "bookings" | "stats" | "profile";
 
 const SCHEDULE_DATA = [
-  { time: "06:00", title: "Утренняя тренировка", type: "Фигурное катание", arena: "Орион", spots: 3, total: 12, status: "available" },
+  { time: "06:00", title: "Фигурное катание", type: "Фигурное катание", arena: "Орион", spots: 3, total: 12, status: "available" },
   { time: "08:00", title: "Хоккейная тренировка", type: "Хоккей", arena: "Орион", spots: 0, total: 20, status: "full" },
   { time: "10:00", title: "Открытое катание", type: "Свободное", arena: "Орион", spots: 45, total: 60, status: "available" },
   { time: "12:00", title: "Детская секция", type: "Детская секция", arena: "Орион", spots: 7, total: 15, status: "available" },
