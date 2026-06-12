@@ -191,9 +191,7 @@ export default function Index() {
                       </div>
                     </div>
                     <div className="text-right">
-                      {slot.status === "full" && (
-                        <span className="text-xs text-red-400 font-golos">Нет мест</span>
-                      )}
+
                       {slot.status === "closed" && (
                         <span className="text-xs text-muted-foreground font-golos">Закрыто</span>
                       )}
