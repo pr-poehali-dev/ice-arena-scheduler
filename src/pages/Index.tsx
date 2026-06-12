@@ -71,7 +71,7 @@ export default function Index() {
         <div className="flex items-center justify-between">
           <div>
             <p className="text-muted-foreground text-xs font-golos tracking-widest uppercase mb-1">Ледовый дворец</p>
-            <h1 className="font-bebas text-4xl text-foreground tracking-wide" style={{ textShadow: "0 0 20px hsl(195 100% 50% / 0.6)" }}>
+            <h1 className="text-4xl text-foreground" style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700, letterSpacing: "0.12em", textShadow: "0 0 24px hsl(195 100% 50% / 0.7)" }}>
               <span className="text-sky-400">ОРИОН</span>
             </h1>
           </div>
