@@ -191,14 +191,6 @@ export default function Index() {
                       </div>
                     </div>
                     <div className="text-right">
-                      {slot.status === "available" && (
-                        <button
-                          className="text-slate-900 text-xs font-golos font-semibold px-3 py-1.5 rounded-lg transition-colors"
-                          style={{ background: "linear-gradient(135deg, hsl(195 100% 50%), hsl(170 80% 45%))" }}
-                        >
-                          Записаться
-                        </button>
-                      )}
                       {slot.status === "full" && (
                         <span className="text-xs text-red-400 font-golos">Нет мест</span>
                       )}
