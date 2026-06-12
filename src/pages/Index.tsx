@@ -20,9 +20,9 @@ const DATES = [9, 10, 11, 12, 13, 14, 15];
 
 const BOOKINGS = [
   { id: "B-2024", title: "Вечернее катание", date: "Сегодня, 16:00", arena: "Орион", duration: "90 мин", status: "active", type: "Свободное" },
-  { id: "B-2022", title: "Профи-тренировка", date: "14 июня, 18:00", arena: "Орион", duration: "120 мин", status: "upcoming", type: "Скоростное" },
-  { id: "B-2021", title: "Открытое катание", date: "10 июня, 10:00", arena: "Орион", duration: "90 мин", status: "done", type: "Свободное" },
-  { id: "B-2020", title: "Хоккей", date: "8 июня, 08:00", arena: "Орион", duration: "60 мин", status: "done", type: "Хоккей" },
+  { id: "B-2026", title: "Профи-тренировка", date: "14 июня, 18:00", arena: "Орион", duration: "120 мин", status: "upcoming", type: "Скоростное" },
+  { id: "B-2025", title: "Открытое катание", date: "10 июня, 10:00", arena: "Орион", duration: "90 мин", status: "done", type: "Свободное" },
+  { id: "B-2024", title: "Хоккей", date: "8 июня, 08:00", arena: "Орион", duration: "60 мин", status: "done", type: "Хоккей" },
 ];
 
 const STATS_MONTHLY = [
@@ -339,7 +339,7 @@ export default function Index() {
           <div className="animate-fade-in">
             <div className="flex items-center justify-between mb-5">
               <h2 className="font-bebas text-2xl text-foreground tracking-wide">Статистика</h2>
-              <span className="text-xs text-sky-400 font-golos">2024</span>
+              <span className="text-xs text-sky-400 font-golos">2026</span>
             </div>
 
             {/* Рекорды */}
@@ -455,7 +455,7 @@ export default function Index() {
               <p className="text-muted-foreground text-sm font-golos mt-1">Фигурное катание · Профессионал</p>
               <div className="flex items-center gap-1.5 mt-2">
                 <span className="w-2 h-2 bg-green-400 rounded-full" />
-                <span className="text-xs text-green-400 font-golos">Абонемент активен до 31.12.2024</span>
+                <span className="text-xs text-green-400 font-golos">Абонемент активен до 31.12.2026</span>
               </div>
             </div>
 
@@ -483,7 +483,7 @@ export default function Index() {
                 </div>
                 <div className="text-right">
                   <div className="text-[10px] text-muted-foreground font-golos">До</div>
-                  <div className="font-golos font-medium text-sm text-foreground">31.12.24</div>
+                  <div className="font-golos font-medium text-sm text-foreground">31.12.26</div>
                 </div>
               </div>
             </div>
