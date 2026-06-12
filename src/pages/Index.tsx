@@ -7,12 +7,12 @@ type Tab = "schedule" | "bookings" | "stats" | "profile";
 const SCHEDULE_DATA = [
   { time: "06:00", title: "Утренняя тренировка", type: "Фигурное катание", arena: "Орион", spots: 3, total: 12, status: "available" },
   { time: "08:00", title: "Хоккейная тренировка", type: "Хоккей", arena: "Орион", spots: 0, total: 20, status: "full" },
-  { time: "10:00", title: "Открытое катание", type: "Свободное", arena: "Орион", spots: 15, total: 30, status: "available" },
+  { time: "10:00", title: "Открытое катание", type: "Свободное", arena: "Орион", spots: 45, total: 60, status: "available" },
   { time: "12:00", title: "Детская секция", type: "Детская секция", arena: "Орион", spots: 7, total: 15, status: "available" },
   { time: "14:00", title: "Тренировка сборной", type: "Хоккей", arena: "Орион", spots: 0, total: 25, status: "closed" },
-  { time: "16:00", title: "Вечернее катание", type: "Свободное", arena: "Орион", spots: 22, total: 40, status: "available" },
+  { time: "16:00", title: "Вечернее катание", type: "Свободное", arena: "Орион", spots: 38, total: 60, status: "available" },
   { time: "18:00", title: "Профи-тренировка", type: "Скоростное", arena: "Орион", spots: 2, total: 8, status: "available" },
-  { time: "20:00", title: "Ночное катание", type: "Свободное", arena: "Орион", spots: 18, total: 35, status: "available" },
+  { time: "20:00", title: "Ночное катание", type: "Свободное", arena: "Орион", spots: 22, total: 60, status: "available" },
 ];
 
 const DAYS = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
@@ -204,7 +204,20 @@ export default function Index() {
                     <span className={`text-[10px] font-golos px-2 py-0.5 rounded-full border ${TYPE_COLORS[slot.type] || "bg-muted text-muted-foreground border-border"}`}>
                       {slot.type}
                     </span>
-
+                    {slot.type === "Свободное" && (
+                      <div className="flex items-center gap-2">
+                        <div className="h-1 w-20 bg-muted rounded-full overflow-hidden">
+                          <div
+                            className="h-full rounded-full transition-all"
+                            style={{
+                              width: `${((slot.total - slot.spots) / slot.total) * 100}%`,
+                              background: "linear-gradient(90deg, hsl(195 100% 50%), hsl(170 80% 45%))",
+                            }}
+                          />
+                        </div>
+                        <span className="text-[10px] text-muted-foreground font-golos">{slot.spots}/{slot.total}</span>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
